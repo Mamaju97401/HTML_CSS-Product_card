@@ -21,14 +21,15 @@ body {
     box-shadow: 0 15px 45px rgba(0, 0, 0, 1);
     display: flex;
     overflow: hidden;
-    /*transition: 0.5s ease-in-out;*/
+    transition: 0.5s ease-in-out;
+
 }
-/*
+
 .card :hover
 {
     width: 600px;
 }
-*/
+
 .card .imgBx
 {
     position: relative;
@@ -39,6 +40,8 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    /*z-index: 2;*/
+
 }
 .card .imgBx img 
 {
@@ -53,8 +56,9 @@ body {
 }
 .card .detail
 {
-    position: relative;
-    width: 300px;
+    position: absolute;
+    left: 0;
+    min-width: 300px;
     height: 100%;
     background-color: #4ba9e9;
     display: flex;
@@ -62,6 +66,13 @@ body {
     /*align-items: center;*/
     padding: 20px;
     flex-direction: column;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+.card:hover.detail
+{
+    left: 300px;
+
 }
 .card .detail::before
 {
