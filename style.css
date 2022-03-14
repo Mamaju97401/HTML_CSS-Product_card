@@ -40,8 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /*z-index: 2;*/
-
+    z-index: 2;
 }
 .card .imgBx img 
 {
@@ -52,7 +51,6 @@ body {
 .card:hover .imgBx img
 {
     transform: rotate(-35deg) translateX(-20px);
-
 }
 .card .detail
 {
@@ -133,9 +131,9 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    opacity: 0.5;
+    opacity: 0.65;
     cursor: pointer;
-    transition: 0.5s;
+    /*transition: 0.5s;*/
 }
 .card .detail .size li:hover
 {
